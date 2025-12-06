@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChmpCord – Yeni Nesil Ses & Mesaj Platformu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loader" class="loader-overlay">
+    <div class="loader-content">
+      <div class="loader-logo-circle">
+        <span>C</span>
+      </div>
+      <div class="loader-text">ChmpCord yükleniyor...</div>
+      <div class="loader-wave"></div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header id="navbar" class="glass-nav">
+    <div class="nav-left">
+      <div class="brand">
+        <div class="brand-circle">
+          <span>C</span>
+        </div>
+        <div class="brand-text">
+          <strong>ChmpCord</strong>
+          <span>Yeni nesil ses & mesaj</span>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Anasayfa</a>
+      <a href="#servers">Sunucu</a>
+      <a href="#guides">Rehber</a>
+      <a href="#invite">Invite</a>
+      <a href="#faq">SSS</a>
+      <button class="nav-btn nav-login">Giriş Yap</button>
+      <button class="nav-btn nav-primary">ChmpCord’u Başlat</button>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Menü">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-bg-wave"></div>
+
+      <div class="hero-inner">
+        <div class="hero-left reveal" data-parallax-speed="0.1">
+          <div class="hero-chip">
+            <span class="chip-dot"></span>
+            <span>Discord hissi + Champion enerjisi</span>
+          </div>
+
+          <h1>
+            Ses, mesaj ve topluluk için
+            <span class="gradient-text">ChmpCord</span>
+          </h1>
+
+          <p class="hero-sub">
+            Arkadaşlarınla konuş, topluluğunu yönet, botlarını bağla.  
+            Tüm deneyim, tek bir modern ve hızlı arayüzde birleşti.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn big primary">ChmpCord’u Başlat</button>
+            <button class="btn big ghost">Tarayıcıda aç</button>
+          </div>
+
+          <div class="hero-meta">
+            <div class="hero-avatars">
+              <div class="hero-avatar">TR</div>
+              <div class="hero-avatar">EU</div>
+              <div class="hero-avatar">PVP</div>
+              <div class="hero-avatar-count">+1.8K üye çevrimiçi</div>
+            </div>
+            <span class="meta-dot"></span>
+            <span>Ortalama ping: <strong>19 ms</strong></span>
+            <span class="meta-dot"></span>
+            <span>Bot API: <strong>ChmpCord.js</strong></span>
+          </div>
+        </div>
+
+        <!-- SERVER PREVIEW -->
+        <div class="hero-right reveal" data-parallax-speed="0.2">
+          <div class="server-card gradient-border">
+            <div class="server-header">
+              <div>
+                <div class="server-title">Champion Network</div>
+                <div class="server-sub">ChmpCord • Genel Sunucu</div>
+              </div>
+              <div class="server-status">
+                <span class="status-dot"></span>
+                <span>Çevrimiçi • 324 / 2000</span>
+              </div>
+            </div>
+
+            <div class="server-body">
+              <div class="server-sidebar">
+                <div class="sidebar-group">METİN KANALLARI</div>
+                <div class="sidebar-channel active"><span>#</span><p>genel-sohbet</p></div>
+                <div class="sidebar-channel"><span>#</span><p>yardım</p></div>
+                <div class="sidebar-channel"><span>#</span><p>duyurular</p></div>
+
+                <div class="sidebar-group">SES</div>
+                <div class="sidebar-channel"><span>🔊</span><p>Oyun & Sohbet</p></div>
+                <div class="sidebar-channel"><span>🎧</span><p>Müzik Odası</p></div>
+              </div>
+
+              <div class="server-chat">
+                <div class="chat-header">
+                  <span class="hash">#</span>
+                  <span>genel-sohbet</span>
+                  <span class="chat-pill">Slowmode: 2s</span>
+                </div>
+
+                <div class="chat-messages">
+                  
+                  <!-- MESSAGE 1 -->
+                  <div class="chat-msg">
+                    <div class="chat-avatar">YK</div>
+                    <div class="chat-content">
+                      <div class="chat-meta"><span class="chat-name">Yiğit</span><span class="chat-time">18:42</span></div>
+                      <p>ChmpCord beta’ya hoş geldiniz! 🎧</p>
+                    </div>
+                  </div>
+
+                  <!-- MESSAGE 2 -->
+                  <div class="chat-msg">
+                    <div class="chat-avatar mod">C</div>
+                    <div class="chat-content">
+                      <div class="chat-meta"><span class="chat-name">ChampionBot</span><span class="chat-time">18:43</span></div>
+                      <p>Yeni komutlar geldi: /ticket • /rank • /invite</p>
+                    </div>
+                  </div>
+
+                  <!-- (MoonNw mesajı silindi) -->
+
+                </div>
+
+                <div class="chat-input">
+                  <span>+</span>
+                  <input type="text" placeholder="#genel-sohbet kanalına mesaj gönder" disabled />
+                  <button disabled>Gönder</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="server-footer">
+              <span>Sunucunu ChmpCord tasarımıyla tanıt.</span>
+              <button class="btn small ghost">Şablonu kopyala</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GUIDES -->
+    <section id="guides" class="section guides-section">
+      <div class="section-header reveal">
+        <h2>Hızlı Başlangıç Rehberi</h2>
+        <p>3 adımda sunucunu hazırla.</p>
+      </div>
+
+      <div class="guide-grid">
+        <article class="guide-card reveal" data-parallax-speed="0.05">
+          <div class="guide-step">1</div>
+          <h3>Sunucu kur</h3>
+          <p>Hazır ChmpCord şablonları ile.</p>
+          <span class="guide-tag">Sunucu</span>
+        </article>
+
+        <article class="guide-card reveal" data-parallax-speed="0.08">
+          <div class="guide-step">2</div>
+          <h3>Bot bağla</h3>
+          <p>Moderasyon, log, ticket — hepsi hazır.</p>
+          <span class="guide-tag">Bot</span>
+        </article>
+
+        <article class="guide-card reveal" data-parallax-speed="0.11">
+          <div class="guide-step">3</div>
+          <h3>Topluluğunu büyüt</h3>
+          <p>Davet et, ödülleri kazan.</p>
+          <span class="guide-tag">Invite</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- INVITE REWARDS -->
+    <section id="invite" class="section invite-section">
+      <div class="section-header reveal">
+        <h2>Invite Rewards</h2>
+        <p>Arkadaşlarını davet et, ödülleri ücretsiz kazan.</p>
+      </div>
+
+      <div class="invite-grid">
+
+        <div class="invite-card reveal" data-parallax-speed="0.05">
+          <h3>1 Invite</h3>
+          <p class="reward">+100 ChmpCoin</p>
+          <ul>
+            <li>• Özel rol</li>
+            <li>• Profil rozeti</li>
+          </ul>
+          <button class="btn ghost full">Davet Linki</button>
+        </div>
+
+        <div class="invite-card main reveal" data-parallax-speed="0.10">
+          <div class="badge">En Popüler</div>
+          <h3>3 Invite</h3>
+          <p class="reward nitro">CordNitro</p>
+          <ul>
+            <li>• Nitro rozeti</li>
+            <li>• HD ses & ekran paylaşımı</li>
+            <li>• Boost efekti</li>
+          </ul>
+          <button class="btn primary full">CordNitro Al</button>
+        </div>
+
+        <div class="invite-card reveal" data-parallax-speed="0.15">
+          <h3>5 Invite</h3>
+          <p class="reward">Ultra Prize</p>
+          <ul>
+            <li>• VIP özel kanal</li>
+            <li>• Animasyonlu rozet</li>
+          </ul>
+          <button class="btn ghost full">Davet Linki</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section faq-section">
+      <div class="section-header reveal">
+        <h2>SSS</h2>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item reveal">
+          <h3>ChmpCord ücretsiz mi?</h3>
+          <p>Evet, tamamen ücretsizdir.</p>
+        </div>
+        <div class="faq-item reveal">
+          <h3>CordNitro nasıl alınır?</h3>
+          <p>3 davet yapan herkes ücretsiz alır.</p>
+        </div>
+        <div class="faq-item reveal">
+          <h3>Davet sistemi çalışıyor mu?</h3>
+          <p>Evet, backend veya bot ile tamamlayabiliriz.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2025 ChmpCord • Discord ile bağlantılı değildir.</span>
+    <span>Invite sistemi tamamen ücretsizdir.</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

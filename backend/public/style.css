@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  display: flex;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  width: 240px;
+  background: #1f2937;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.sidebar a {
+  display: block;
+  color: #e5e7eb;
+  margin: 10px 0;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
+.sidebar a.active {
+  background: #374151;
+  color: #4ade80;
+}
+
+.logout {
+  margin-top: 20px;
+  color: #f87171 !important;
+}
+
+/* CONTENT */
+
+.content {
+  padding: 30px;
+  width: 100%;
+}
+
+#channelList .channel {
+  background: #1e293b;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#channelList .channel:hover {
+  background: #334155;
+}
+
+#channelList .channel.active {
+  border: 1px solid #4ade80;
+}
+
+/* USERS LIST */
+
+#users {
+  margin-top: 15px;
+  background: #111827;
+  padding: 12px;
+  border-radius: 10px;
+  min-height: 80px;
+}
+
+.voice-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.voice-user .avatar-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  overflow: hidden;
+}
+
+.voice-user .avatar-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.voice-user .info .name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.voice-user .info .id {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+/* Konuşma yeşil halkası */
+.voice-user.speaking .avatar-wrap {
+  border-color: #22c55e;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.7);
+}
+
+/* HİNT */
+
+.hint {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* CONTROL BAR (mic / cam / screen / end) */
+
+.controls {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  background: rgba(15, 23, 42, 0.9);
+  padding: 10px 16px;
+  border-radius: 999px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(14px);
+}
+
+.ctrl-btn {
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: none;
+  background: #1f2937;
+  color: #e5e7eb;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  transition: 0.2s;
+}
+
+.ctrl-btn.off {
+  background: #b91c1c;
+}
+
+.ctrl-btn.on {
+  background: #4ade80;
+  color: #111827;
+}
+
+.ctrl-btn.end {
+  background: #dc2626;
+  color: #fff;
+}
+
+.ctrl-btn:hover {
+  transform: translateY(-1px);
+}
+
+/* leaveRoom butonu */
+
+#leaveRoom {
+  margin-top: 15px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #ef4444;
+  color: #fff;
+  cursor: pointer;
+}

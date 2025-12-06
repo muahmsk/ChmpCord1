@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #111827;
+  color: #fff;
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background: #1f2937;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: #ddd;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  color: #4ade80;
+}
+
+.logout {
+  margin-top: 20px;
+  color: #f87171 !important;
+}
+
+.content {
+  padding: 30px;
+  width: 100%;
+}
+
+#channelList .channel {
+  background: #1e293b;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#channelList .channel:hover {
+  background: #334155;
+}

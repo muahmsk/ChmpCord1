@@ -1,0 +1,17 @@
+{
+  "genel": {
+    "name": "Genel Oda",
+    "password": "",
+    "users": []
+  },
+  "oyun": {
+    "name": "Oyun Odası",
+    "password": "",
+    "users": []
+  },
+  "gizli": {
+    "name": "Gizli Oda",
+    "password": "1234",
+    "users": []
+  }
+}
